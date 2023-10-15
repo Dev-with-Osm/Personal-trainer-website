@@ -1,0 +1,77 @@
+    header{
+        
+            position: fixed;
+            width: 100%;
+            top: 0;
+            right: 0;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: transparent;
+            padding: 7px 10%;
+            transition: all .38s ease;
+        
+    }
+    header .logo a img {
+        width: 35%;
+    }
+    .navbar{
+        display: flex;
+        align-items: center;
+    }
+
+    .navlink{
+        display: flex;
+        margin-right: 20px;
+    }
+    
+    .navlink a {
+        color: #fff;
+        font-size: 20px;
+    }
+    
+    .navlink  li {
+        margin-right: 15px;
+    }
+  
+    .button a {
+        padding: 0.8em 1.8em;
+        border: 2px solid #ffdc28;
+        position: relative;
+        overflow: hidden;
+        background-color: transparent;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight: 600;
+        transition: .3s;
+        z-index: 1;
+        font-family: inherit;
+        color: #ffdc28;
+        cursor: pointer;
+       }
+       
+       .button a::before {
+        content: '';
+        width: 0;
+        height: 300%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(45deg);
+        background: #ffdc28;
+        transition: .5s ease;
+        display: block;
+        z-index: -1;
+       }
+       
+       .button a:hover::before {
+        width: 105%;
+       }
+       
+       .button a:hover {
+        color: #000;
+        font-weight: 600;
+       }
+       
