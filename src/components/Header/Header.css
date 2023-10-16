@@ -1,5 +1,4 @@
-    header{
-        
+    header{ 
             position: fixed;
             width: 100%;
             top: 0;
@@ -11,67 +10,82 @@
             background: transparent;
             padding: 7px 10%;
             transition: all .38s ease;
-        
+
     }
     header .logo a img {
         width: 35%;
     }
-    .navbar{
-        display: flex;
-        align-items: center;
-    }
-
+    
     .navlink{
         display: flex;
-        margin-right: 20px;
+        margin-right: 150px;
     }
-    
-    .navlink a {
-        color: #fff;
-        font-size: 20px;
-    }
-    
+
+
+    .navlink a{
+      color: #d9cccc;
+      font-size: 1.1rem;
+      font-weight: 600;
+      padding: 5px 0;
+      margin: 2px 10px;
+      border-bottom: 2px solid transparent;
+      transition: all .38s ease;
+  }
+  
+  .navlink a:hover{
+      border-bottom: 2px solid #ffdc2b;
+      color: #ffdc2b;
+  }
+
+
+
     .navlink  li {
         margin-right: 15px;
     }
-  
-    .button a {
-        padding: 0.8em 1.8em;
-        border: 2px solid #ffdc28;
-        position: relative;
-        overflow: hidden;
-        background-color: transparent;
-        text-align: center;
-        text-transform: uppercase;
-        font-size: 16px;
-        font-weight: 600;
-        transition: .3s;
-        z-index: 1;
-        font-family: inherit;
-        color: #ffdc28;
-        cursor: pointer;
-       }
-       
-       .button a::before {
-        content: '';
-        width: 0;
-        height: 300%;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%) rotate(45deg);
-        background: #ffdc28;
-        transition: .5s ease;
-        display: block;
-        z-index: -1;
-       }
-       
-       .button a:hover::before {
-        width: 105%;
-       }
-       
-       .button a:hover {
-        color: #000;
-        font-weight: 600;
-       }
-       
+
+    .conatct-btn button {
+      width: 10em;
+      position: relative;
+      height: 3.5em;
+      border: 3px ridge #ffdc2b;
+      outline: none;
+      background-color: #000001;
+      color: #d9cccc;
+      transition: 1s;
+      border-radius: 0.3em;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    
+    .conatct-btn button::after {
+      content: "";
+      position: absolute;
+      top: -10px;
+      left: 3%;
+      width: 95%;
+      height: 40%;
+      background-color: #000001;
+      transition: 0.5s;
+      transform-origin: center;
+    }
+    
+    .conatct-btn  button::before {
+      content: "";
+      transform-origin: center;
+      position: absolute;
+      top: 80%;
+      left: 3%;
+      width: 95%;
+      height: 40%;
+      background-color: #000001;
+      transition: 0.5s;
+    }
+    
+    .conatct-btn  button:hover::before, button:hover::after {
+      transform: scale(0)
+    }
+    
+    .conatct-btn  button:hover {
+      box-shadow: inset 0px 0px 25px #ffdc2b;
+    }

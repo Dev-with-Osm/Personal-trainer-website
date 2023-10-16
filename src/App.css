@@ -7,7 +7,8 @@
 
 body{
   font-family: 'Open Sans', sans-serif;
-  background-color: #040411;
+  background-color: #000001;
+  color: #fff;
 }
 
 li{
@@ -16,4 +17,7 @@ li{
 
 a{
   text-decoration: none;
+}
+section{
+  padding: 90px 11% 80px;
 }
